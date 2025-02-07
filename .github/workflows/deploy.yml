@@ -41,7 +41,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./docs/_build/html  # ビルドしたHTMLのディレクトリ
+        path: ./docs/build/html  # ビルドしたHTMLのディレクトリ
 
     - name: Deploy to GitHub Pages
       id: deployment
