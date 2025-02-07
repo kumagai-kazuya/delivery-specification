@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: 3.12  # お好きなPythonのバージョンを指定
 
@@ -31,9 +31,18 @@ jobs:
         cd docs  # Sphinxプロジェクトのディレクトリに移動
         make html  # HTMLドキュメントをビルド
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+    #- name: Deploy to GitHub Pages
+    #  uses: peaceiris/actions-gh-pages@v3
+    #  with:
+    #    github_token: ${{ secrets.GITHUB_TOKEN }}
+    #    publish_dir: ./docs/_build/html  # ビルドしたHTMLのディレクトリ
+    #    publish_branch: gh-pages  # GitHub Pagesのブランチ
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/_build/html  # ビルドしたHTMLのディレクトリ
-        publish_branch: gh-pages  # GitHub Pagesのブランチ
+        path: ./docs/_build/html  # ビルドしたHTMLのディレクトリ
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
