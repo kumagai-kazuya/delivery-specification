@@ -33,4 +33,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs/_build/html  # ビルドしたHTMLのディレクトリ
-        publish_branch: gh-pages  # GitHub Pagesのブランチ
+        publish_branch: main  # GitHub Pagesのブランチ
