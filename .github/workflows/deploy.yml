@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write  # GitHub Actionsがコンテンツの書き込みを行うための権限を明示的に付与
+  id-token: write  # GitHub ActionsがIDトークンを書き込むための権限を明示的に付与
 
 jobs:
   deploy:
