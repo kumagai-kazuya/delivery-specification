@@ -1,5 +1,6 @@
 sphinx
 sphinx-rtd-theme
 sphinx_markdown_tables
+sphinx_copybutton
 myst-parser
 sphinxcontrib-mermaid
