@@ -6,3 +6,4 @@ sphinx_diagrams
 myst-parser
 sphinxcontrib-mermaid
 furo
+linkify-it-py

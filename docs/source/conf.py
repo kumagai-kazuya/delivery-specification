@@ -25,6 +25,9 @@ extensions = [
 
 # -- テーマの設定 ---------------------------------------------------------
 html_theme = 'furo'                 # furoテーマを使用
+#html_theme = 'alabaster'
+#html_theme = 'document'
+
 
 # -- ソースファイルの拡張子の設定 -----------------------------------------
 source_suffix = {
@@ -40,6 +43,7 @@ myst_enable_extensions = [
     "dollarmath",        # インラインおよびブロック数式のサポート
     "amsmath",           # AMS math機能のサポート
     "colon_fence",       # コロンフェンスのサポート
+    "linkify",           # 自動リンク検出
     "deflist",           # 定義リストのサポート
     "html_admonition",   # HTML警告のサポート
     "html_image",        # HTML画像のサポート
