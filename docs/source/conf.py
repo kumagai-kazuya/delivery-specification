@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'test_document'
+project = 'Document Template'
 copyright = '2025, PSNRD'
 author = 'PSNRD'
 release = '0.0.1'
