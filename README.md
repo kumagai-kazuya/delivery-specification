@@ -1,4 +1,4 @@
-この環境はマークダウンドキュメントをGitHub ActionsとGitHub Pagesを使用してドキュメントをホスティングするための環境です。
+この環境はマークダウンドキュメントをGitHub ActionsとGitHub Pagesを使用してホスティングするための環境です。
 
 * ドキュメントタイトルは、source\index.rstに書いてください。
 * ドキュメント本文は、source\document.mdに書いてください。
